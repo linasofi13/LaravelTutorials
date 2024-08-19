@@ -20,7 +20,8 @@ return view('home.about')->with("title", $data1)
 
 En la ruta /about sería mejor mover esa lógica a un controlador, especialmente si en el futuro la lógica se vuelve más compleja. De esta manera, mantengo el código más organizado y fácil de manejar. Un enfoque más limpio sería crear un método en el controlador para manejar esa lógica y solo llamar a ese método desde la ruta.
 
-## Activity 2
+## Activity 7
+•	Try to understand the previous code. Add a new product but leave the name empty (and click send). Then, leave the price empty. Then, enter the two fields.
 
-•	Create a “/contact” section in which you display the application email, address, and phone number. Use fake information.
+Al intentar ingresar cualquiera de los dos campos sin el otro, nos dice que son campos obligatorios. Esto es porque en nuestra función de guardar productos nos indica que el nombre y el precio son obligatorios. Al intentar ingresar ambos campos no pasa nada.
 
